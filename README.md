@@ -1,11 +1,11 @@
-# Kedi Sev 🐾
+# Pet the Cat 🐾
 
-Tarayıcıda çalışan, sevilebilen bir kedi. Kafasını sev, yanaklarını kaşı, elini uzat ve yanağını sürtmesini izle, göbeğini aç… ama dikkat: göbek sevgisi bazen **sevgi ısırmasıyla** biter.
+Tarayıcıda çalışan, sevilebilen bir kedi. Kafasını sev, yanaklarını kaşı, elini uzat ve yanağını sürtmesini izle, göbeğini sev.göbek sevgisi bazen sevgi ısırmasıyla biter.
 
-İki kedi var, gerçek kedilerden esinlenerek hazırlandı:
+İki kedi var, kedilerim Azuş ve Hurma'dan esinlenerek hazırlandı:
 
-- **Tekir** – yeşil gözlü, alnında "M" deseni olan kahverengi-gri tekir
-- **Smokin** – siyah-beyaz, pembe burunlu, kırmızı puantiyeli tasmalı
+- **Tekir** – Hurma. Sevilmeye başladığı an mırlar. Biraz sinirlidir ısırır.
+- **Smokin** – Azuş. Dünyanın en sakin kedisi. Asla ısırmaz tırmalamaz. 
 
 Hiçbir resim ya da ses dosyası kullanılmaz: kürk binlerce tek tek çizilen tüy teliyle, mırlama sesi de Web Audio ile anlık olarak üretilir.
 
@@ -35,23 +35,6 @@ Hiçbir resim ya da ses dosyası kullanılmaz: kürk binlerce tek tek çizilen t
 
 Kedi bir süre kendi hâline kalırsa battaniyeyi kendiliğinden yoğurmaya başlar.
 
-## Bilgisayarında çalıştırma
-
-Kurulum gerekmez. `index.html` dosyasına çift tıklaman yeterli. İstersen yerel bir sunucuyla da açabilirsin:
-
-```bash
-python3 -m http.server 8000
-```
-
-Sonra tarayıcıda `http://localhost:8000` adresine git.
-
-## GitHub Pages ile yayınlama
-
-1. Bu klasörü GitHub'da yeni bir depoya yükle.
-2. Depoda **Settings → Pages** bölümüne git.
-3. **Source** olarak `Deploy from a branch`, dal olarak `main` ve klasör olarak `/ (root)` seç.
-4. Bir dakika sonra oyun `https://KULLANICI-ADIN.github.io/kedi-sev/` adresinde yayında olur.
-
 ## Proje yapısı
 
 ```
@@ -64,6 +47,3 @@ js/hand.js        İnsan eli çizimi
 js/audio.js       Prosedürel mırlama sesi
 js/scene.js       Duvar ve polar battaniye
 js/main.js        Oyun döngüsü, fare/dokunma/klavye girişi
-```
-
-Yeni bir kedi eklemek için `js/fur.js` içindeki `KS.Looks` nesnesine yeni bir görünüm ekle (renk deseni fonksiyonu, göz, burun ve tasma renkleri) ve `index.html` içine bir buton koy.
