@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kedi Sev</title>
+  <meta name="description" content="Tarayıcıda kedi sevme oyunu: kafasını sev, yanaklarını kaşı, göbeğini aç, mırlamasını dinle.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="c" aria-label="Sevilebilen kedi"></canvas>
+
+  <header class="top">
+    <div class="brand">
+      <h1>Kedi Sev</h1>
+      <span>Elini uzat, kedin mırlasın.</span>
+    </div>
+    <div class="cats" role="group" aria-label="Kedi seç">
+      <button data-cat="tabby">Tekir</button>
+      <button data-cat="tuxedo">Smokin</button>
+    </div>
+    <div class="right">
+      <div class="meter" title="Mutluluk">
+        <span>Mutluluk</span>
+        <div class="bar"><i id="joy"></i></div>
+      </div>
+      <button id="sound">Ses: Açık</button>
+    </div>
+  </header>
+
+  <div id="status" aria-live="polite"></div>
+  <div id="hint">Fareyi basılı tutup kedinin üstünde gezdir · Elini yüzünün yanında beklet, yanağını sürtsün</div>
+
+  <nav class="actions" aria-label="Sevme hareketleri">
+    <button data-act="head"><kbd>1</kbd>Kafa sev</button>
+    <button data-act="cheek"><kbd>2</kbd>Yanak kaşı</button>
+    <button data-act="rub"><kbd>3</kbd>Elini uzat</button>
+    <button data-act="belly"><kbd>4</kbd>Göbek</button>
+    <button data-act="loaf"><kbd>5</kbd>Ekmek pozu</button>
+    <button data-act="bite"><kbd>6</kbd>Sevgi ısırığı</button>
+    <button data-act="purr"><kbd>7</kbd>Mırla</button>
+    <button data-act="knead"><kbd>8</kbd>Yoğur</button>
+    <button data-act="sit"><kbd>Boşluk</kbd>Otur</button>
+  </nav>
+
+  <div id="loading" class="on">Tüyler taranıyor…</div>
+
+  <script src="js/util.js"></script>
+  <script src="js/fur.js"></script>
+  <script src="js/cat.js"></script>
+  <script src="js/hand.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
